@@ -8,4 +8,8 @@ public class Email {
         this.lastName = lastName;
     }
 
+    String generate() {
+        return firstName + "." + lastName + "@department.company.com";
+    }
+
 }
