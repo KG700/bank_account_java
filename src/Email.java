@@ -1,12 +1,12 @@
 public class Email {
 
-    String firstName;
-    String lastName;
-    String department;
-    String emailAddress;
-    String password;
-    String alternativeEmail;
-    int mailCapacity;
+    private String firstName;
+    private String lastName;
+    private String department;
+    private String emailAddress;
+    private String password;
+    private String alternativeEmail;
+    private int mailCapacity;
 
     Email(String firstName, String lastName, String department) {
         this.firstName = firstName;
