@@ -11,10 +11,11 @@ public class Email {
     Email(String firstName, String lastName, String department) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.department = department;
     }
 
     void generateEmail() {
-        emailAddress = firstName + "." + lastName + "@department.company.com";
+        emailAddress = firstName + "." + lastName + "@" + department + ".company.com";
     }
 
     void generatePassword() {
