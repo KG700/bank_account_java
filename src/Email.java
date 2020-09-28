@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Email {
 
     private String firstName;
@@ -13,6 +15,27 @@ public class Email {
         this.lastName = lastName;
 
         System.out.println("Email created: " + this.firstName + " " + this.lastName);
+    }
+
+    String getFirstName() {
+        return this.firstName;
+    }
+
+    String setDepartment() {
+        System.out.println("Enter the department\n1 for Sales\n2 for Development\n3 for Accounting\n0 for none of the above");
+        Scanner scanner = new Scanner(System.in);
+        String depChoice = scanner.next();
+        switch(depChoice) {
+            case "1":
+                return "sales";
+            case "2":
+                return "development";
+            case "3":
+                return "accounting";
+            default:
+                return "";
+
+        }
     }
 
 //    void generateEmail() {
