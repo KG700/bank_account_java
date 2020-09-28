@@ -5,6 +5,7 @@ public class Email {
     String department;
     String emailAddress;
     String password;
+    String alternativeEmail;
     int mailCapacity;
 
     Email(String firstName, String lastName, String department) {
@@ -26,6 +27,18 @@ public class Email {
 
     void setMailCapacity(int capacity) {
         mailCapacity = capacity;
+    }
+
+    void getName() {
+
+    }
+
+    void getEmail() {
+
+    }
+
+    void getMailCapacity() {
+
     }
 
 
