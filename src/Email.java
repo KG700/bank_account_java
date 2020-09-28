@@ -14,31 +14,31 @@ public class Email {
     }
 
     void generateEmail() {
-        return firstName + "." + lastName + "@department.company.com";
+        emailAddress = firstName + "." + lastName + "@department.company.com";
     }
 
     void generatePassword() {
-        return null;
+        password = "ABC";
     }
 
-    void changePassword() {
-
+    void changePassword(String newPassword) {
+        password = newPassword;
     }
 
     void setMailCapacity(int capacity) {
         mailCapacity = capacity;
     }
 
-    void getName() {
-
+    String getName() {
+        return firstName + " " + lastName;
     }
 
-    void getEmail() {
-
+    String getEmail() {
+        return emailAddress;
     }
 
-    void getMailCapacity() {
-
+    int getMailCapacity() {
+        return mailCapacity;
     }
 
 
