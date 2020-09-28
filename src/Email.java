@@ -30,6 +30,10 @@ public class Email {
         mailCapacity = capacity;
     }
 
+    void setAlternativeEmail(String altEmail) {
+        alternativeEmail = altEmail;
+    }
+
     String getName() {
         return firstName + " " + lastName;
     }
