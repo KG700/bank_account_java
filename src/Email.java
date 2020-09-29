@@ -18,7 +18,10 @@ public class Email {
         this.department = setDepartment();
         System.out.println(this.department);
 
-        this.emailAddress = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@" + department + ".company.com";
+        String dot = ".";
+        if (department.equals("")) dot = "";
+
+        this.emailAddress = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@" + department + dot + "company.com";
         this.password = generateRandomPassword(10);
         System.out.println(password);
     }

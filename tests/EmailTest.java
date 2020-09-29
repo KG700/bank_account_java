@@ -70,6 +70,15 @@ class EmailTest {
     }
 
     @Test
+    public void getNoDepartmentEmail() {
+        String userInput = "1";
+        InputStream in = new ByteArrayInputStream(userInput.getBytes());
+        System.setIn(in);
+
+        assertEquals("amy.johnson@company.com", amyEmail.getEmail());
+    }
+
+    @Test
     public void randomPasswordIsCorrectLength() {
         assertEquals(10, amyEmail.getPassword().length());
     }
