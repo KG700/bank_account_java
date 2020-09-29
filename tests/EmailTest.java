@@ -104,4 +104,10 @@ class EmailTest {
         amyEmail.setAlternativeEmail("aj@example.com");
         assertEquals("aj@example.com", amyEmail.getAlternativeEmail());
     }
+
+    @Test
+    public void canChangePassword() {
+        amyEmail.changePassword("aNewPassword");
+        assertEquals("aNewPassword", amyEmail.getPassword());
+    }
 }

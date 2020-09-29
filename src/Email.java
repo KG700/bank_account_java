@@ -58,11 +58,11 @@ public class Email {
         }
         return new String(password);
     }
-//
-//    void changePassword(String newPassword) {
-//        password = newPassword;
-//    }
-//
+
+    void changePassword(String newPassword) {
+        this.password = newPassword;
+    }
+
     void setMailBoxCapacity(int capacity) {
         this.mailBoxCapacity = capacity;
     }
