@@ -12,6 +12,9 @@ class EmailTest {
 
     @BeforeEach
     void myTestSetUp() {
+        String userInput = "0";
+        InputStream in = new ByteArrayInputStream(userInput.getBytes());
+        System.setIn(in);
         amyEmail = new Email("Amy", "Johnson");
     }
 

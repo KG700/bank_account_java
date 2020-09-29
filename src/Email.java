@@ -15,6 +15,7 @@ public class Email {
         this.lastName = lastName;
 
         System.out.println("Email created: " + this.firstName + " " + this.lastName);
+        this.department = setDepartment();
     }
 
     String getFirstName() {
