@@ -8,7 +8,7 @@ public class Email {
     private String emailAddress;
     private String password;
     private String alternativeEmail;
-    private int mailCapacity;
+    private int mailBoxCapacity = 500;
 
     public Email(String firstName, String lastName) {
         this.firstName = firstName;
@@ -26,14 +26,10 @@ public class Email {
         System.out.println(password);
     }
 
-    String getFirstName() {
-        return this.firstName;
-    }
-
+    String getFirstName() { return this.firstName; }
     String getEmail() { return this.emailAddress; }
-    String getPassword() {
-        return this.password;
-    }
+    String getPassword() { return this.password; }
+    int getMailBoxCapacity() { return this.mailBoxCapacity; }
 
     String setDepartment() {
         System.out.println("DEPARTMENT CODES\n\n1 for Sales\n2 for Development\n3 for Accounting\n0 for none of the above\n\nEnter your department code:");
@@ -52,10 +48,6 @@ public class Email {
         }
     }
 
-//    void generateEmail() {
-//        emailAddress = firstName + "." + lastName + "@" + department + ".company.com";
-//    }
-//
     String generateRandomPassword(int length) {
         String passwordCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890@#$%!";
         char[] password = new char[length];
@@ -70,9 +62,9 @@ public class Email {
 //        password = newPassword;
 //    }
 //
-//    void setMailCapacity(int capacity) {
-//        mailCapacity = capacity;
-//    }
+    void setMailBoxCapacity(int capacity) {
+        this.mailBoxCapacity = capacity;
+    }
 //
 //    void setAlternativeEmail(String altEmail) {
 //        alternativeEmail = altEmail;

@@ -82,4 +82,15 @@ class EmailTest {
     public void randomPasswordIsCorrectLength() {
         assertEquals(10, amyEmail.getPassword().length());
     }
+
+    @Test
+    public void mailBoxCapacityDefaultIs500() {
+        assertEquals(500, amyEmail.getMailBoxCapacity());
+    }
+
+    @Test
+    public void mailBoxCapacityCanBeSetTo1000() {
+        amyEmail.setMailBoxCapacity(1000);
+        assertEquals(1000, amyEmail.getMailBoxCapacity());
+    }
 }
