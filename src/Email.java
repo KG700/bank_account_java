@@ -13,17 +13,14 @@ public class Email {
     public Email(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
-
-        System.out.println("Email created: " + this.firstName + " " + this.lastName);
         this.department = setDepartment();
-        System.out.println(this.department);
 
         String dot = ".";
         if (department.equals("")) dot = "";
 
         this.emailAddress = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@" + department + dot + "company.com";
         this.password = generateRandomPassword(10);
-        System.out.println(password);
+        System.out.println("Password is: " + password);
     }
 
     String getFirstName() { return this.firstName; }
