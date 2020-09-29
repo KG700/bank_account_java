@@ -95,7 +95,13 @@ class EmailTest {
     }
 
     @Test
-    public void alternativeEmailDefaultsToBlank() {
+    public void alternativeEmailDefaultsToBeNull() {
         assertEquals(null, amyEmail.getAlternativeEmail());
+    }
+
+    @Test
+    public void alternativeEmailCanBeSet() {
+        amyEmail.setAlternativeEmail("aj@example.com");
+        assertEquals("aj@example.com", amyEmail.getAlternativeEmail());
     }
 }

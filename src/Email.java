@@ -66,22 +66,9 @@ public class Email {
     void setMailBoxCapacity(int capacity) {
         this.mailBoxCapacity = capacity;
     }
-//
-//    void setAlternativeEmail(String altEmail) {
-//        alternativeEmail = altEmail;
-//    }
-//
-//    String getName() {
-//        return firstName + " " + lastName;
-//    }
-//
-//    String getEmail() {
-//        return emailAddress;
-//    }
-//
-//    int getMailCapacity() {
-//        return mailCapacity;
-//    }
 
+    void setAlternativeEmail(String altEmail) {
+        this.alternativeEmail = altEmail;
+    }
 
 }
