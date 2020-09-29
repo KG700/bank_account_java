@@ -60,6 +60,16 @@ class EmailTest {
     }
 
     @Test
+    public void getSalesEmail() {
+        String userInput = "1";
+        InputStream in = new ByteArrayInputStream(userInput.getBytes());
+        System.setIn(in);
+        amyEmail = new Email("Amy", "Johnson");
+
+        assertEquals("amy.johnson@sales.company.com", amyEmail.getEmail());
+    }
+
+    @Test
     public void randomPasswordIsCorrectLength() {
         assertEquals(10, amyEmail.getPassword().length());
     }

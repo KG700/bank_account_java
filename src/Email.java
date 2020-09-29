@@ -18,6 +18,7 @@ public class Email {
         this.department = setDepartment();
         System.out.println(this.department);
 
+        this.emailAddress = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@" + department + ".company.com";
         this.password = generateRandomPassword(10);
         System.out.println(password);
     }
@@ -26,6 +27,7 @@ public class Email {
         return this.firstName;
     }
 
+    String getEmail() { return this.emailAddress; }
     String getPassword() {
         return this.password;
     }
