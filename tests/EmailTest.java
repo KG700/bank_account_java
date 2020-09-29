@@ -58,4 +58,9 @@ class EmailTest {
 
         assertEquals("", amyEmail.setDepartment());
     }
+
+    @Test
+    public void randomPasswordIsCorrectLength() {
+        assertEquals(10, amyEmail.getPassword().length());
+    }
 }
