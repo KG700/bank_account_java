@@ -110,4 +110,14 @@ class EmailTest {
         amyEmail.changePassword("aNewPassword");
         assertEquals("aNewPassword", amyEmail.getPassword());
     }
+
+    @Test
+    public void displaysUserNameEmailAndMailBoxCapacity() {
+        assertEquals(
+                "DISPLAY NAME: Amy Johnson" +
+                        "\nEMAIL: amy.johnson@company.com" +
+                        "\nMAILBOX CAPACITY: 500mb",
+                amyEmail.getInfo()
+        );
+    }
 }

@@ -32,6 +32,10 @@ public class Email {
     int getMailBoxCapacity() { return this.mailBoxCapacity; }
     String getAlternativeEmail() { return this.alternativeEmail; }
 
+    void changePassword(String newPassword) { this.password = newPassword; }
+    void setMailBoxCapacity(int capacity) { this.mailBoxCapacity = capacity; }
+    void setAlternativeEmail(String altEmail) { this.alternativeEmail = altEmail; }
+
     String setDepartment() {
         System.out.println("DEPARTMENT CODES\n\n1 for Sales\n2 for Development\n3 for Accounting\n0 for none of the above\n\nEnter your department code:");
         Scanner scanner = new Scanner(System.in);
@@ -59,16 +63,10 @@ public class Email {
         return new String(password);
     }
 
-    void changePassword(String newPassword) {
-        this.password = newPassword;
+    String getInfo() {
+        return
+                "DISPLAY NAME: " + firstName + " " + lastName +
+                        "\nEMAIL: " + emailAddress +
+                        "\nMAILBOX CAPACITY: " + mailBoxCapacity + "mb";
     }
-
-    void setMailBoxCapacity(int capacity) {
-        this.mailBoxCapacity = capacity;
-    }
-
-    void setAlternativeEmail(String altEmail) {
-        this.alternativeEmail = altEmail;
-    }
-
 }
