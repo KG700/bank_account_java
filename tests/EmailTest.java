@@ -93,4 +93,9 @@ class EmailTest {
         amyEmail.setMailBoxCapacity(1000);
         assertEquals(1000, amyEmail.getMailBoxCapacity());
     }
+
+    @Test
+    public void alternativeEmailDefaultsToBlank() {
+        assertEquals(null, amyEmail.getAlternativeEmail());
+    }
 }

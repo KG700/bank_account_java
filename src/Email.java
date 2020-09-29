@@ -30,6 +30,7 @@ public class Email {
     String getEmail() { return this.emailAddress; }
     String getPassword() { return this.password; }
     int getMailBoxCapacity() { return this.mailBoxCapacity; }
+    String getAlternativeEmail() { return this.alternativeEmail; }
 
     String setDepartment() {
         System.out.println("DEPARTMENT CODES\n\n1 for Sales\n2 for Development\n3 for Accounting\n0 for none of the above\n\nEnter your department code:");
